@@ -11,7 +11,7 @@ app.factory('userRepository', userRepository);
 app.controller("formCtr", function($scope,userRepository ){
 	
 	$scope.users = userRepository.getAllUsers();
-	$scope.adduser = userRepository.addUser();
+	$scope.adduser = userRepository.addUser;
 	console.log($scope.users);
 	
 });
